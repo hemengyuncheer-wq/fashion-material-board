@@ -1,4 +1,4 @@
 interface:
   display_name: "时装材质灵感板"
-  short_description: "生成手作拼贴质感的时装材质与造型灵感板图像"
-  default_prompt: "Use $fashion-material-board to create a taped fashion material board for a burgundy leather skirt look."
+  short_description: "将用户上传的服装参考图转换为手作拼贴材质灵感板"
+  default_prompt: "Use $fashion-material-board to ask me for one outfit reference image, then transform it into a tactile fashion material board."
