@@ -23,7 +23,7 @@
 </p>
 
 > [!NOTE]
-> 本 Skill 需要 Codex 环境以及可用的图像生成能力。安装完成后，请开启一个新的 Codex 任务，让 Skill 列表重新加载。
+> 本 Skill 采用参考图驱动的工作流。使用前必须先上传一张服装、造型或时装参考图；没有参考图时，Skill 会先请求上传，不会直接生成。它还需要 Codex 环境以及可用的图像生成能力。安装完成后，请开启一个新的 Codex 任务，让 Skill 列表重新加载。
 
 ## 一张材质板，就是一套造型故事
 
@@ -80,8 +80,10 @@ git clone https://github.com/hemengyuncheer-wq/fashion-material-board.git \
 
 ### 2. 创建第一张材质板
 
+先在对话中上传一张清晰的服装或完整造型参考图，然后发送：
+
 ```text
-使用 $fashion-material-board，为酒红色皮裙造型创建一张时装材质灵感板。
+使用 $fashion-material-board，将我上传的参考图转换成一张时装材质灵感板。
 ```
 
 也可以提供更完整的造型要求：
@@ -89,8 +91,8 @@ git clone https://github.com/hemengyuncheer-wq/fashion-material-board.git \
 ```text
 使用 $fashion-material-board 创建一张纵向时装材质板。
 
-造型是一件白色棉质系带衬衫、酒红色皮革中长裙、黑色长靴和米色毛绒手包。
-左侧放置完整造型的时装编辑照片，右侧放置白色棉布、酒红色光面皮革和米色长绒毛样本。
+以我上传的造型参考图为主体，保留其中可识别的服装轮廓、颜色、配饰和整体气质。
+从图中提取适合的主要面料，并在右侧整理成 3–5 块真实材质样本。
 整体使用暖米白纸张、旧胶带、轻微褶皱、自然阴影和少量手写工作室批注。
 ```
 
@@ -185,8 +187,6 @@ fashion-material-board/
 - `agents/openai.yaml`：Codex 中显示的名称、说明与默认调用示例
 - `README.md`：安装及使用说明
 - `LICENSE`：MIT 开源许可证
-- `fashion-material-board-01.png`：时装材质板示例一
-- `fashion-material-board-02.png`：时装材质板示例二
 
 ## Skill 名称
 

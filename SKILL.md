@@ -1,15 +1,26 @@
 ---
 name: fashion-material-board
-description: Create fashion material boards, textile swatch boards, and styling concept sheets with the tactile hand-assembled look of taped editorial printouts, physical fabric/leather/fur samples, and handwritten production notes. Use when generating a fashion moodboard, garment material story, look-development board, apparel concept presentation, or a realistic flat-lay textile reference image.
+description: Transform a user-supplied outfit or fashion reference image into a tactile fashion material board with taped editorial printouts, physical fabric/leather/fur samples, and handwritten production notes. Use for image-led fashion moodboards, garment material stories, look-development boards, apparel concept presentations, or realistic flat-lay textile reference images.
 ---
 
 # Fashion Material Board
 
 Create a vertically oriented, photographed physical styling board: one editorial outfit printout at left and a curated material library at right. Prioritize believable paper, real textile depth, and imperfect hand assembly over graphic-design polish.
 
+## Require a reference image first
+
+This is a reference-image-led workflow. Always require at least one user-supplied outfit, garment, or fashion reference image before generating the material board.
+
+- If the current request has no attached image, do not generate, invent an outfit, or call an image-generation tool. Ask the user to upload one clear reference image, then stop.
+- Keep the request concise: `请先上传一张你想转换成材质灵感板的服装或造型参考图。`
+- If an image is already attached in the current request or available in the immediate conversation context, use it directly and do not ask for it again.
+- Treat written preferences such as palette, occasion, or desired materials as optional supplements to the required image, not replacements for it.
+- After receiving the image, inspect the visible silhouette, garments, colours, surface qualities, accessories, and styling mood before deciding the material story.
+- Preserve the reference image's recognizable outfit and styling direction in the editorial printout. Do not replace it with an unrelated invented look.
+
 ## Build the board
 
-1. Decide the look first: silhouette, occasion, colour family, and 3–5 supporting materials. Keep the palette disciplined: mostly neutrals plus one accent, or a restrained monochrome.
+1. Read the look from the supplied reference image: silhouette, occasion, colour family, visible surfaces, and 3–5 supporting materials. Keep the palette disciplined: mostly neutrals plus one accent, or a restrained monochrome.
 2. Compose on a warm ivory/off-white wall or tabletop. Place a slightly oversized cream sheet of uncoated paper on it, set vertically with a small natural shadow.
 3. Put one tall fashion-editorial model photograph in the left third. It must show the full outfit in a neutral studio and be visibly fixed with torn strips of aged masking tape along its top and bottom edges.
 4. Arrange real, touchable swatches in the right two-thirds. Use 3–5 samples of visibly different construction: rib knit, striped jersey, brushed wool, smooth leather, croc-embossed leather, cotton, plaid, faux fur, or feather trim. Let at least one sample overlap another or extend beyond the paper to create depth.
@@ -36,6 +47,8 @@ Describe every material by both colour and surface (for example, “deep oxblood
 
 ## Guardrails
 
+- Do not generate anything until the user has supplied a reference image.
+- Do not treat the example below or a text-only theme as a substitute for the user's image.
 - Do not make it a digital collage, UI, scrapbook with stickers, or a polished catalogue layout.
 - Do not use grids, borders, bright graphic colour blocks, glossy magazine spreads, excessive branding, or legible large typography.
 - Do not show floating swatches; every element should appear laid on or taped to the board.
